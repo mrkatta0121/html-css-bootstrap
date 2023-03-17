@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section class="display-1 text-center"><p>BOOTSTRAP GRID</p></section>
+        <h1>COLUMN SPACE CONTROL</h1>
+        <h2>column space-10</h2>
+    <section class="container bg-secondary p-5">
+        <section class="row bg-primary p-2">
+            <section class="col col-10 bg-danger p-3"></section>
+        </section>
+    </section>
+    <h2>column space-15</h2>
+    <h3> if the single col is more than 12 then. it doesnt change the limit of container. it adjust in the given space</h3>
+    <section class="container bg-primary p-5">
+        <section class="row bg-danger p-2">
+            <section class="col col-15 bg-warning p-3"></section>
+        </section>
+    </section>
+     <h1> 3 col of 5 size </h1>
+     <h3> 1st they occupy the required space in it, the remaing space is less than the required space then it takes an another row and occupy the space below the row</h3>
+    <section class="container bg-primary    ">
+        <section class="row bg-danger p-2">
+            <section class="col col-5 bg-warning p-3"></section>
+            <section class="col col-5 bg-info p-3"></section>
+            <section class="col col-5 bg-dark p-3"></section>
+        </section>
+    </section>
+
+    <section class="container bg-primary my-5">
+        <section class="row bg-danger  text-center">
+            <section class="col col-3 bg-warning "> AWM</section>
+            <section class="col col-3 bg-info ">AKM</section>
+            <section class="col col-3 bg-dark  text-light ">M416</section>
+            <section class="col col-3 bg-light ">GROZA</section>
+            <section class="col col-3 bg-secondary ">VECTOR</section>
+            <section class="col col-3 bg-success">MG-3</section>
+
+        </section>
+    </section>
+ <h1> changing sizes during responce</h1>
+    <section class="container bg-primary my-5">
+        <section class="row bg-danger  text-center">
+            <section class="col  col-sm-3 col-md-6 col-lg-9 bg-warning "> AWM</section>
+            <section class="col col-3 bg-info ">AKM</section>
+            <section class="col col-3 bg-dark  text-light ">M416</section>
+            <section class="col col-3 bg-light ">GROZA</section>
+            <section class="col col-3 bg-secondary ">VECTOR</section>
+            <section class="col col-3 bg-success">MG-3</section>
+
+        </section>
+    </section>
+
+    <section class="container my-5">
+        <section class="row ">
+            <section class="col"> <img src="../MEDIA/bomb.jpg" alt="" height="100px" ></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+
+        </section>
+    </section>
+ <h1>GRID in BOOTSTRAP</h1>
+    <section class="container my-5">
+        <section class="row ">
+            <section class="col"> <img src="../MEDIA/bomb.jpg" alt="" height="100px" ></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+            <section class="col "> <img src="../MEDIA/bomb.jpg" alt="" height="100px"></section>
+
+        </section>
+    </section>
+
+    <h1>Flex-in Bootstrap</h1>
+    <h2 class="text-center">ROWS</h2>
+    <section class="container bg-primary my-5">
+        <section class=" bg-danger  text-center d-flex justify-content-between">
+            <section class=" bg-warning "> AWM</section>
+            <section class=" bg-info ">AKM</section>
+            <section class=" bg-dark  text-light ">M416</section>
+            <section class=" bg-light ">GROZA</section>
+            <section class=" bg-secondary ">VECTOR</section>
+            <section class=" bg-success">MG-3</section>
+
+        </section>
+    </section>
+    <h2>Reverse</h2>
+    <section class="container bg-primary my-5">
+        <section class=" bg-danger  text-center d-flex justify-content-between flex-row-reverse">
+            <section class=" bg-warning "> AWM</section>
+            <section class=" bg-info ">AKM</section>
+            <section class=" bg-dark  text-light ">M416</section>
+            <section class=" bg-light ">GROZA</section>
+            <section class=" bg-secondary ">VECTOR</section>
+            <section class=" bg-success">MG-3</section>
+
+        </section>
+    </section>
+    <h2 class="text-center">COLUMN</h2>
+    <section class="container bg-primary my-5">
+        <section class=" bg-danger  text-center d-flex justify-content-between flex-column">
+            <section class=" bg-warning "> AWM</section>
+            <section class=" bg-info ">AKM</section>
+            <section class=" bg-dark  text-light ">M416</section>
+            <section class=" bg-light ">GROZA</section>
+            <section class=" bg-secondary ">VECTOR</section>
+            <section class=" bg-success">MG-3</section>
+
+        </section>
+    </section>
+    <h2>Reverse</h2>
+    <section class="container bg-primary my-5">
+        <section class=" bg-danger  text-center d-flex justify-content-between flex-column flex-column-reverse">
+            <section class=" bg-warning "> AWM</section>
+            <section class=" bg-info ">AKM</section>
+            <section class=" bg-dark  text-light ">M416</section>
+            <section class=" bg-light ">GROZA</section>
+            <section class=" bg-secondary ">VECTOR</section>
+            <section class=" bg-success">MG-3</section>
+
+        </section>
+    </section>
+
+    </section>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</html>

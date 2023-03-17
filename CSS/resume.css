@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 230, 230);
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: start;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    grid-template-columns: auto auto;
+    column-gap: 20rem;
+    background-color: rgb(106, 247, 247);
+    border-bottom-right-radius: 550px;
+    border-bottom-left-radius: 150px;
+}
+
+header img {
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+#h1 {
+
+    background-color: white;
+    margin-left: 10rem;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.parent3 h3 {
+    font-size: 2rem;
+}
+.parent3 h1 {
+    font-size: 2rem;
+}
+.parent3 h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.parent3 p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 5rem;
+    column-gap: 10rem;
+}
+.parent1{
+    padding-right: 5rem;
+    border-right: 2px solid;
+}
+.parent1 p
+{
+ margin-block: 1rem;
+ font-size: 1.3rem;
+}
+.parent1 h1{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.parent2 h1{
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.parent2 article
+{
+ margin-bottom: 2rem;
+}
+.parent2 article aside
+{
+ margin-bottom: 1rem;
+}
+.parent2 article aside p
+{
+    margin-block: 5px;
+}
+.parent2 li{
+    margin-block: 10px;
+}
+
+.c1 {
+    border-bottom: 2px solid grey;
+}
+.c2 {
+    border-bottom: 2px solid grey;
+}
+.c3 {
+    border-bottom: 2px solid grey;
+}
+.c4 {
+    border-bottom: 2px solid grey;
+}
+.c5 {
+    border-bottom: 2px solid grey;
+}

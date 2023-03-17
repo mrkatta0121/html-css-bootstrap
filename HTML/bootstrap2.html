@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container my-5 ">
+        <section><h1>Dropdowns</h1></section>
+        <!-- <section class="btn-group text-center">
+            
+            <section class="btn btn-primary">
+                Front-End
+            </section>
+            <section class="btn btn-danger btn-outline-dark"> Back-End </section>
+
+        </section>  -->
+         <section class="btn-group btn-group-verticle">
+        <section class="btn btn-primary " data-bs-toggle="dropdown">
+            Front-End
+        </section>
+        <section class="dropdown-menu">
+            <section class="dropdown-item"> HTML</section>
+            <section class="dropdown-item"> CSS</section>
+            <section class="dropdown-item">abcs</section>
+         </section>
+         <section class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Back-End</section>
+         <section class="dropdown-menu">
+            <section class="dropdown-item"> node.js</section>
+            <section class="dropdown-item"> angular </section>
+         </section>
+
+         <section class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"> extra courses </section>
+         <section class="dropdown-menu">
+             <section class="dropdown-item"> C++</section>
+             <section class="dropdown-item"> Java</section>
+         </section>
+        </section>
+        </section>
+        <p class="display-3 m-5">PAGINATION</p>
+         <section class=" container d-flex justify-content-center py-5 bg-danger">
+           <p class="h1">USING BUTTONS</p>
+        <section class="btn-group">
+                <ul class=" btn  btn-secondary pagination">
+                    <li class="btn page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class=" btn page-item"><a class="page-link" href="#">1</a></li>
+                    <li class=" btn page-item disabled"><a class="page-link" href="#">2</a></li>
+                    <li class="btn page-item active"><a class="page-link" href="#">3</a></li>
+                    <li class="btn page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+        </section>
+    </section>
+    <section class=" container d-flex justify-content-center my-5 py-5 bg-success rounded-pill">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link rounded-pill" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+    </section>
+    <section class="container m-5 text-center">
+        <p><h1>Listed groups</h1></p>
+        <ul class="list-group ">
+            <li class="list-group-item text-light bg-danger rounded-pill"> P </li>
+            <li class="list-group-item bg-dark text-light rounded-pill"> R </li>
+            <li class="list-group-item text-light bg-info rounded-pill"> A </li>
+            <li class="list-group-item text-light bg-primary rounded-pill"> S </li>
+            <li class="list-group-item text-light bg-secondary rounded-pill"> A </li>
+            <li class="list-group-item text-light bg-success rounded-pill"> N </li>
+            <li class="list-group-item text-light bg-warning rounded-pill"> N </li>
+            <li class="list-group-item"> A </li>
+
+        </ul>
+
+    </section>
+    <h1>Badges</h1>
+    <section  class="container my-5">
+        <section class="bg-primary badges d-inline text-light p-2">
+            messages <span class="bg-danger p-2 rounded-pill">4</span>
+        </section>
+    </section>
+        <section  class="container my-5">
+            <section class="bg-primary badges d-inline text-light rounded-pill p-2">
+                missed-calls <span class="bg-success p-2 rounded-pill">120</span>
+            </section>
+            </section>
+            <section  class="container my-5">
+                <section class="bg-primary badges d-inline text-light rounded-pill p-2">
+                notifications <span class="bg-warning p-2 rounded-pill">15</span>
+                </section>
+                <section class="badges bg-danger d-inline text-light rounded-pill p-3 mx-4">
+               Instagram <span class="bg-info p-2 rounded-pill">
+11
+               </span>
+                </section>
+    </section>
+    <P class="display-2">CARD</P>
+ <section class="container my=5">
+ <section class="card">
+    <section class="card-header">
+        <img class="card-img"
+        src="../MEDIA/gallery-1.jpg" alt="">
+ THIS IS CARD HEAD
+    </section>
+    <section class="card-body">
+        THIS IS CARD BODY
+    </section>
+    <section class="card-footer">
+        THIS IS CARD FOOTER
+    </section>
+
+ </section>
+ </section>
+
+  <section class="container my-5"> 
+    <section class="btn btn-secondary btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#i1">
+        More details
+           </section>
+
+
+    <section class="btn btn-primary" id="i1" data-bs-toggle="collapse" data-bs-target="#collapse1">
+ Front-End
+    </section>
+    <section class="card" id="collapse1">
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia at assumenda, ipsa eligendi vitae, expedita dolorum qui nulla ad fugit eaque veniam modi minima. Id magni quaerat hic harum culpa.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deserunt blanditiis voluptatibus nisi natus recusandae corporis quasi. Ipsam est, minus quod reprehenderit, repellat aliquid iure blanditiis provident porro voluptatum quisquam?</p>   
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nemo possimus nostrum! Earum sit repellat rem magnam assumenda aliquam repudiandae doloremque nam cupiditate tempora? Aut officiis minima provident error maiores?</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic dolorum excepturi laboriosam aspernatur quas molestias commodi voluptate dicta iste blanditiis sed accusamus sunt nam itaque, odit rem animi ad.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem iste veritatis nobis voluptatibus. Dolor laboriosam, neque quo deserunt nesciunt natus corrupti omnis quam, necessitatibus maiores exercitationem est ipsam sapiente!</p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem dolores saepe at alias vitae illo? Deserunt unde repellat impedit vero incidunt. Eligendi commodi omnis id ducimus. Ipsum, atque labore!</p>
+</section>
+<section class="btn btn-secondary" id="i1" data-bs-toggle="collapse" data-bs-target="#collapse2">
+    Back-End
+       </section>
+       <section class="card" id="collapse2">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia at assumenda, ipsa eligendi vitae, expedita dolorum qui nulla ad fugit eaque veniam modi minima. Id magni quaerat hic harum culpa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deserunt blanditiis voluptatibus nisi natus recusandae corporis quasi. Ipsam est, minus quod reprehenderit, repellat aliquid iure blanditiis provident porro voluptatum quisquam?</p>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nemo possimus nostrum! Earum sit repellat rem magnam assumenda aliquam repudiandae doloremque nam cupiditate tempora? Aut officiis minima provident error maiores?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic dolorum excepturi laboriosam aspernatur quas molestias commodi voluptate dicta iste blanditiis sed accusamus sunt nam itaque, odit rem animi ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem iste veritatis nobis voluptatibus. Dolor laboriosam, neque quo deserunt nesciunt natus corrupti omnis quam, necessitatibus maiores exercitationem est ipsam sapiente!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem dolores saepe at alias vitae illo? Deserunt unde repellat impedit vero incidunt. Eligendi commodi omnis id ducimus. Ipsum, atque labore!</p>
+   </section>
+   <section class="btn btn-danger" id="i1" data-bs-toggle="collapse" data-bs-target="#collapse3">
+    Data base
+       </section>
+       <section class="card" id="collapse3">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia at assumenda, ipsa eligendi vitae, expedita dolorum qui nulla ad fugit eaque veniam modi minima. Id magni quaerat hic harum culpa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deserunt blanditiis voluptatibus nisi natus recusandae corporis quasi. Ipsam est, minus quod reprehenderit, repellat aliquid iure blanditiis provident porro voluptatum quisquam?</p>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nemo possimus nostrum! Earum sit repellat rem magnam assumenda aliquam repudiandae doloremque nam cupiditate tempora? Aut officiis minima provident error maiores?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic dolorum excepturi laboriosam aspernatur quas molestias commodi voluptate dicta iste blanditiis sed accusamus sunt nam itaque, odit rem animi ad.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem iste veritatis nobis voluptatibus. Dolor laboriosam, neque quo deserunt nesciunt natus corrupti omnis quam, necessitatibus maiores exercitationem est ipsam sapiente!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem dolores saepe at alias vitae illo? Deserunt unde repellat impedit vero incidunt. Eligendi commodi omnis id ducimus. Ipsum, atque labore!</p>
+   </section>
+  </section>
+     
+  <h1 class="text-center">Forms</h1>
+
+  <section class="container my- alert-primary " style="border: 5px solid black;">
+    <form class="was-validated">
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-label"> <b> FIRST NAME:</b></label>
+        </article>
+        <article class="col">
+            <input type="text" class="form-control"  required>
+            <aside class="valid-feedback"> valid input</aside>
+            <aside class="invalid-feedback">invalid input</aside>
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-label"> <b> LAST NAME:</b></label>
+        </article>
+        <article class="col">
+            <input type="text" class="form-control" value="LAST NAME">
+            <aside class="valid-feedback"> valid input</aside>
+            <aside class="invalid-feedback">invalid input</aside>
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-label"><b> GMAIL: </b></label>
+        </article>
+        <article class="col">
+            <input type="email" class="form-control" placeholder="@GMAIL.COM" required>
+            <aside class="valid-feedback"> valid input</aside>
+            <aside class="invalid-feedback">invalid input</aside>
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-label"> <b> PHONE NO: </b></label>
+        </article>
+        <article class="col">
+            <input type="text" class="form-control" maxlength="10">
+            <aside class="valid-feedback"> valid input</aside>
+            <aside class="invalid-feedback">invalid input</aside>
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-check-label"><strong> LANGUAGES: </strong></label>
+        </article>
+        <article class="col">
+            <input type="checkbox" class="form-check-input"> telugu
+            <input type="checkbox" class="form-check-input"> hindi
+            <input type="checkbox" class="form-check-input">english
+            <input type="checkbox" class="form-check-input"> urdu
+            
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+            <label for="" class="form-label"> <strong> GENDER: </strong></label>
+        </article>
+        <article class="col">
+            <input type="radio" class="form-check-input" name="abc"> male
+            <input type="radio" class="form-radio-input" name="abc" >female
+            <input type="radio" class="form-check-input" name="abc">others
+        </article>
+    </section>
+    <section class="row py-3" >
+        <article class="col">
+          <label for=""> <strong> COUNTRY </strong></label>
+        </article>
+        <article class="col">
+         <select name="" id="" class="form-select">
+            <option value=""><-select-></option>
+            <option value="">INDIA</option>
+            <option value="">PAK</option>
+            <option value="">ENGLAND</option>
+         </select>
+        </article>
+    </section>
+    <section class="row py-3">
+        <article class="col">
+    <label for=""> <b> Address </b> </label>
+        </article>
+        <article class="col">
+            <textarea name="" id="" cols="80" rows="5" class="form-control"></textarea>
+        </article>
+
+    </section>
+    <section>
+        <article class="row p-4 py-3">
+            <article class="col text-center">
+             <input type="Submit" class="form-submit">
+                <input type="reset" class="form-reset">
+               </article>
+        </article>
+    </section>
+
+   </form>
+  </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

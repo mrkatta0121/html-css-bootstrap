@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section
+{
+    width: 35rem;
+    height: 3rem;
+    border: .5rem solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.JW1 {
+    background-color: rgb(251, 3, 3);
+    width: 500px;
+    animation: bar 10s  linear infinite;
+    border-radius: 15px;
+}
+
+@keyframes bar {
+    0%
+    {
+        transform: translateX(-60rem);
+    }
+    25%{
+        transform: translateX(-10rem);
+    }
+    60%{
+        transform: translateX(5rem);
+    }
+    75%{
+        transform: translateX(30rem);
+    }
+    80%
+    {
+        transform: translate(25rem);
+    }
+    85%
+    {
+        transform: translateX(15rem);
+    }
+
+    100%{
+        transform: translateX(65rem);
+    }
+}

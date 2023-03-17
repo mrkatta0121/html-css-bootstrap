@@ -1,0 +1,700 @@
+function include(url){
+
+  document.write('<script src="'+url+'"></script>');
+
+  return false ;
+
+}
+
+
+
+/* DEVICE.JS
+
+========================================================*/
+
+include('js/device.min.js');
+
+
+
+/* Stick up menu
+
+========================================================*/
+
+include('js/tmstickup.js');
+
+$(window).load(function() { 
+
+  if ($('html').hasClass('desktop')) {
+
+      $('#stuck_container').TMStickUp({
+
+      })
+
+  }
+
+});
+
+
+
+/* Easing library
+
+========================================================*/
+
+include('js/jquery.easing.1.3.js');
+
+
+
+
+
+/* DEVICE.JS AND SMOOTH SCROLLIG
+
+========================================================
+
+include('js/jquery.mousewheel.min.js');
+
+include('js/jquery.simplr.smoothscroll.min.js');
+
+$(function () { 
+
+  if ($('html').hasClass('desktop')) {
+
+      $.srSmoothscroll({
+
+        step:150,
+
+        speed:800
+
+      });
+
+  }   
+
+});*/
+
+
+
+
+
+/* Orientation tablet fix
+
+========================================================*/
+
+$(function(){
+
+// IPad/IPhone
+
+	var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
+
+	ua = navigator.userAgent,
+
+
+
+	gestureStart = function () {viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";},
+
+
+
+	scaleFix = function () {
+
+		if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
+
+			viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+
+			document.addEventListener("gesturestart", gestureStart, false);
+
+		}
+
+	};
+
+	
+
+	scaleFix();
+
+	// Menu Android
+
+	if(window.orientation!=undefined){
+
+  var regM = /ipod|ipad|iphone/gi,
+
+   result = ua.match(regM)
+
+  if(!result) {
+
+   $('.sf-menu li').each(function(){
+
+    if($(">ul", this)[0]){
+
+     $(">a", this).toggle(
+
+      function(){
+
+       return false;
+
+      },
+
+      function(){
+
+       window.location.href = $(this).attr("href");
+
+      }
+
+     );
+
+    } 
+
+   })
+
+  }
+
+ }
+
+});
+
+var ua=navigator.userAgent.toLocaleLowerCase(),
+
+ regV = /ipod|ipad|iphone/gi,
+
+ result = ua.match(regV),
+
+ userScale="";
+
+if(!result){
+
+ userScale=",user-scalable=0"
+
+}
+
+document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
+
+//Initialize first demo:
+
+ddaccordion.init({
+
+	headerclass: "mypets", //Shared CSS class name of headers group
+
+	contentclass: "thepet", //Shared CSS class name of contents group
+
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+
+	animatedefault: false, //Should contents open by default be animated into view?
+
+	scrolltoheader: false, //scroll to header each time after it's been expanded by the user?
+
+	persiststate: true, //persist state of opened contents within browser session?
+
+	toggleclass: ["class1", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+
+		//do nothing
+
+	},
+
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+
+		//do nothing
+
+	}
+
+})
+
+
+
+//Initialize first demo:
+
+ddaccordion.init({
+
+	headerclass: "mypets2", //Shared CSS class name of headers group
+
+	contentclass: "thepet2", //Shared CSS class name of contents group
+
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+
+	animatedefault: false, //Should contents open by default be animated into view?
+
+	scrolltoheader: false, //scroll to header each time after it's been expanded by the user?
+
+	persiststate: true, //persist state of opened contents within browser session?
+
+	toggleclass: ["class1", "openpet2"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+
+		//do nothing
+
+	},
+
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+
+		//do nothing
+
+	}
+
+})
+
+
+
+$(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+
+        autoPlay : 3000,
+
+        stopOnHover : true,
+
+        navigation:true,
+
+        paginationSpeed : 1000,
+
+        goToFirstSpeed : 3000,
+
+        singleItem : false,
+
+        autoHeight : true,
+
+		items :4,
+
+        itemsCustom : false,
+
+        itemsDesktop : [1199, 4],
+
+        itemsDesktopSmall : [979, 3],
+
+        itemsTablet : [768, 2],
+
+        itemsTabletSmall : false
+
+      });
+
+    });
+
+	
+
+
+
+
+
+<!--Top-->
+
+$(document).ready(function(){ 
+
+					
+
+			/*$.get('session-value.php', function(data) {
+
+				$('#hid_captcha').val(data);
+
+				$('#captcha_img').attr("src","captcha.php?code=" + data);
+
+				$('#captcha_img').attr("align","absmiddle");
+
+			});*/
+
+
+
+			$(window).scroll(function(){
+
+				if ($(this).scrollTop() > 100) {
+
+					$('.scrollup').fadeIn();
+
+				} else {
+
+					$('.scrollup').fadeOut();
+
+				}
+
+			}); 
+
+			
+
+			$('.scrollup').click(function(){
+
+				$("html, body").animate({ scrollTop: 0 }, 600);
+
+				return false;
+
+			});
+
+ 
+
+		});
+
+
+
+// Preloader
+
+$(function(){
+
+	$("#smk_content").preloadify();
+
+});
+
+
+
+// img preloader
+
+
+
+$(function(){
+
+
+
+$.fn.preloadify = function(options){
+
+	
+
+	var defaults = {
+
+		             delay:0,
+
+					 imagedelay:10,
+
+					 mode:"parallel",
+
+					 check_timer:200,
+
+					 ondone:function(){ },
+
+					 oneachload:function(image){  },
+
+					 fadein:700 ,
+
+					 force_icon:false
+
+					};
+
+	
+
+	// variables declaration and precaching images and parent container
+
+	 var options = $.extend(defaults, options),
+
+		 parent = $(this),
+
+		 timer,i=0,j=options.imagedelay,counter=0,images = parent.find("img").css({display:"inline",visibility:"hidden",opacity:0}),
+
+		 checkFlag = [],
+
+		 imagedelayer = function(image,time){
+
+			
+
+			$(image).css("visibility","visible").delay(time).animate({opacity:1},options.fadein,function(){ $(this).parent().removeClass("preloader");  });
+
+			
+
+			};
+
+		
+
+	// add preloader to parent or wrap anchor depending on option	
+
+	images.each(function(){
+
+		
+
+		if($(this).parent(options.preload_parent).length==0)
+
+		$(this).wrap("<div class='preloader' />");
+
+		else
+
+		$(this).parent().addClass("preloader");
+
+		
+
+		checkFlag[i++] = false;
+
+				
+
+		});
+
+	
+
+	
+
+	
+
+	
+
+	// convert into image array
+
+	images = $.makeArray(images);
+
+	counter = 0;
+
+	
+
+	// function to show image 
+
+	function showimage(i)
+
+	{
+
+		if(checkFlag[i]==false)
+
+			{
+
+				counter++; 
+
+				options.oneachload(images[i]);
+
+				checkFlag[i] = true;
+
+			}
+
+				
+
+		if(options.imagedelay==0&&options.delay==0)
+
+			$(images[i]).css("visibility","visible").animate({opacity:1},700);
+
+		else if(options.delay==0)
+
+		{
+
+			imagedelayer(images[i],j);
+
+			j += options.imagedelay;
+
+		}
+
+		else if(options.imagedelay==0)
+
+		{
+
+			imagedelayer(images[i],options.delay);
+
+			
+
+		}
+
+		else
+
+		{
+
+			imagedelayer(images[i],(options.delay+j));
+
+			j += options.imagedelay;
+
+		}
+
+				
+
+	}
+
+	
+
+	// 	preload images parallel
+
+	function preload_parallel()
+
+	{
+
+		for(i=0;i<images.length;i++)
+
+		{
+
+			if(images[i].complete==true)
+
+			{
+
+				showimage(i);
+
+			 
+
+			}
+
+		}
+
+	}
+
+	
+
+	// shows images based on index with respect to parent container
+
+	function preload_sequential()
+
+	{
+
+		
+
+			if(images[i].complete==true)
+
+			{
+
+				showimage(i);
+
+				 i++;
+
+			}
+
+	}
+
+	
+
+	i=0;j=options.imagedelay;
+
+	// keep on checking after predefined time, if image is loaded
+
+	function init(){
+
+	timer = setInterval(function(){
+
+		
+
+		if(counter>=checkFlag.length)
+
+		{
+
+			clearInterval(timer);
+
+			options.ondone();
+
+			
+
+			return;
+
+		}
+
+		
+
+		
+
+		if(options.mode=="parallel")
+
+		preload_parallel();
+
+		else
+
+		preload_sequential();
+
+		
+
+		},options.check_timer);
+
+		
+
+	}
+
+	
+
+  if(options.force_icon==true){	
+
+  var src = $(".preloader").css("background-image");
+
+ 
+
+	var pattern = /url\(|\)|"|'/g;
+
+	src = src.replace(pattern,'');
+
+	
+
+	
+
+	var icon = jQuery("<img />",{
+
+		
+
+		id : 'loadingicon' ,
+
+		src : src
+
+		
+
+		}).hide().appendTo("body");
+
+	
+
+	timer = setInterval(function(){
+
+		
+
+		if(icon[0].complete==true)
+
+		{
+
+			clearInterval(timer);
+
+			setTimeout(function(){ init(); },options.check_timer);
+
+			 icon.remove();
+
+			return;
+
+		}
+
+		
+
+		},50);
+
+		
+
+	
+
+  }
+
+  else
+
+	init();
+
+	
+
+	
+
+	
+
+	}
+
+	
+
+})
+
+
+
+$(document).scroll(function () {
+
+    var y = $(document).scrollTop(),
+
+        header = $("#menu");
+
+
+
+    if (y >= 300) {
+
+        header.addClass('fixed');
+
+    } else {
+
+        header.removeClass('fixed');
+
+    }
+
+});
+
+
+
